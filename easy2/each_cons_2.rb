@@ -14,7 +14,7 @@ until to iterate through the Array passed in as an argument, but must not use an
 def each_cons(ary, tuple)
   ary[0..-tuple].each_with_index do |item, index|
     array = ary[index, tuple]
-    yield(*array)
+    yield(*array)code
   end
   nil
 end
